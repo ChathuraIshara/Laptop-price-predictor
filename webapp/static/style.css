@@ -1,0 +1,113 @@
+/* style.css for Laptop Price Predictor */
+
+body {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 36px;
+    font-size: 3.2rem;
+    letter-spacing: 2.5px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #f7971e 0%, #ffd200 40%, #f7971e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0 4px 24px #ffd20088, 0 1px 0 #fff;
+    text-align: center;
+    filter: brightness(1.1);
+}
+
+
+
+form {
+    background: #fff;
+    padding: 32px 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.inputfield, .check {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.inputfield label, .check label {
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 2px;
+}
+
+.inputfield input[type="number"],
+.custom_select select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: border 0.2s;
+}
+
+.inputfield input[type="number"]:focus,
+.custom_select select:focus {
+    border: 1.5px solid #fda085;
+    outline: none;
+}
+
+.custom_select {
+    width: 100%;
+}
+
+.btn {
+    background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #fda08544;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #fda085 0%, #f6d365 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.check {
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 8px;
+}
+
+.check label {
+    margin-right: 6px;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 18px 8px;
+        max-width: 98vw;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
